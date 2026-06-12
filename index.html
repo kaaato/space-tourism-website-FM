@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/space-tourism-website-FM/assets/favicon-32x32-DQjEQYWa.png">
+    <title>Frontend Mentor | Space tourism website</title>
+    <script type="module" crossorigin src="/space-tourism-website-FM/assets/index-D8RVlHtC.js"></script>
+    <link rel="stylesheet" crossorigin href="/space-tourism-website-FM/assets/index-C-rokIGT.css">
+  </head>
+
+  <body class="bg-home text-white">
+    <div class="wrapper">
+      <header>
+        <nav class="header-nav">
+          <div class="header-logo">
+            <a class="link-header-logo" href="#" aria-label="Space tourism homepage">
+              <svg role="img" aria-labelledby="svg-header-logo" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                <title id="svg-header-logo">Space tourism</title>
+                <g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+            </a>
+          </div>
+          <div class="header-menu">
+            <button class="btn-open-header-menu" type="button" aria-controls="" aria-expanded="false" aria-label="Open menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21" aria-hidden="true"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+            </button>
+            <!-- data-mobile-menu-state=true => mobile menu open -->
+            <div class="mobile-menu" data-mobile-menu-state="false">
+              <div class="mobile-header">
+                <button class="btn-close-mobile-menu" type="button" aria-label="Close menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" aria-hidden="true"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+                </button>
+              </div>
+              <ul class="header-menu-list">
+                <!-- hover state on the link based on the data-current-page="true" attribute -->
+                <li class="header-menu-item" data-current-page="true">
+                  <a class="link-header-menu" href="#">
+                    <span class="text-header-menu-index">00</span>
+                    <span class="text-header-menu">Home</span>
+                  </a>
+                </li>
+                <li class="header-menu-item">
+                  <a class="link-header-menu" href="./destination.html">
+                    <span class="text-header-menu-index">01</span>
+                    <span class="text-header-menu">Destination</span>
+                  </a>
+                </li>
+                <li class="header-menu-item">
+                  <a class="link-header-menu" href="./crew.html">
+                    <span class="text-header-menu-index">02</span>
+                    <span class="text-header-menu">Crew</span>
+                  </a>
+                </li>
+                <li class="header-menu-item">
+                  <a class="link-header-menu" href="./technology.html">
+                    <span class="text-header-menu-index">03</span>
+                    <span class="text-header-menu">Technology</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+  
+      <main>
+        <div class="hero">
+          <div class="hero-main">
+            <h1 class="hero-title uppercase">
+              <span class="text-hero-title-small">So, you want to travel to</span> 
+              <span class="text-hero-title-big">Space</span>
+            </h1>
+            <p class="text-hero">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+          </div>
+          <div class="hero-cta">
+            <a class="link-hero-cta" href="./destination.html">
+              <span class="text-hero-cta">Explore</span>
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
