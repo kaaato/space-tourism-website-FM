@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicon-32x32.png">
+    <title>Frontend Mentor | Space tourism website</title>
+    <link href="./src/style.css" rel="stylesheet">
+    <script src="./src/main.js" type="module"></script>
+  </head>
+
+  <body class="bg-crew text-white">
+    <div class="wrapper">
+      <header>
+        <nav class="header-nav">
+          <div class="header-logo">
+            <a class="link-header-logo" href="#" aria-label="Space tourism homepage">
+              <svg role="img" aria-labelledby="svg-header-logo" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                <title id="svg-header-logo">Space tourism</title>
+                <g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+            </a>
+          </div>
+          <div class="header-menu">
+            <button class="btn-open-header-menu" type="button" aria-controls="menu" aria-expanded="false" aria-label="Open menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21" aria-hidden="true"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+            </button>
+            <!-- data-mobile-menu-state=true => mobile menu open -->
+            <div class="mobile-menu" data-mobile-menu-state="false" id="menu">
+              <div class="mobile-header">
+                <button class="btn-close-mobile-menu" type="button" aria-label="Close menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" aria-hidden="true"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+                </button>
+              </div>
+              <ul class="header-menu-list">
+                <!-- hover state on the link based on the data-current-page="true" attribute -->
+                <li class="header-menu-item">
+                  <a class="link-header-menu" href="./index.html">
+                    <span class="text-header-menu-index">00</span>
+                    <span class="text-header-menu">Home</span>
+                  </a>
+                </li>
+                <li class="header-menu-item">
+                  <a class="link-header-menu" href="./destination.html">
+                    <span class="text-header-menu-index">01</span>
+                    <span class="text-header-menu">Destination</span>
+                  </a>
+                </li>
+                <li class="header-menu-item" data-current-page="true">
+                  <a class="link-header-menu" href="#">
+                    <span class="text-header-menu-index">02</span>
+                    <span class="text-header-menu">Crew</span>
+                  </a>
+                </li>
+                <li class="header-menu-item">
+                  <a class="link-header-menu" href="./technology.html">
+                    <span class="text-header-menu-index">03</span>
+                    <span class="text-header-menu">Technology</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <main>
+        <div class="crew">
+          <h1 class="crew-title">
+            <span class="text-title-index">02</span>
+            <span class="text-title">Meet your crew</span>
+          </h1>
+          
+          <div class="crew-main">
+            <div class="crew-description">
+              <div class="crew-tabpanel-list" data-tabpanel-list>
+                <div class="crew-tabpanel-item" role="tabpanel" aria-labelledby="tab-0" id="item-0" data-tabpanel-item="0">
+                  <div class="crew-tabpanel-title">
+                    <span class="text-crew-tabpanel-title-a">Commander</span>
+                    <span class="text-crew-tabpanel-title-b">Douglas Hurley</span>
+                  </div>
+                  
+                  <p class="crew-tabpanel-caption text-crew-tabpanel-caption">
+                    Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+                  </p> 
+                </div>
+
+                <div class="crew-tabpanel-item" role="tabpanel" aria-labelledby="tab-1" id="item-1" aria-hidden="true" data-tabpanel-item="1">
+                  <div class="crew-tabpanel-title">
+                    <span class="text-crew-tabpanel-title-a">Mission Specialist</span>
+                    <span class="text-crew-tabpanel-title-b">Mark Shuttleworth</span>
+                  </div>
+                  
+                  <p class="crew-tabpanel-caption text-crew-tabpanel-caption">
+                    Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.
+                  </p> 
+                </div>
+
+                <div class="crew-tabpanel-item" role="tabpanel" aria-labelledby="tab-2" id="item-2" aria-hidden="true" data-tabpanel-item="2">
+                  <div class="crew-tabpanel-title">
+                    <span class="text-crew-tabpanel-title-a">Pilot</span>
+                    <span class="text-crew-tabpanel-title-b">Victor Glover</span>
+                  </div>
+                  
+                  <p class="crew-tabpanel-caption text-crew-tabpanel-caption">
+                    Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.
+                  </p> 
+                </div>
+
+                <div class="crew-tabpanel-item" role="tabpanel" aria-labelledby="tab-3" id="item-3" aria-hidden="true" data-tabpanel-item="3">
+                  <div class="crew-tabpanel-title">
+                    <span class="text-crew-tabpanel-title-a">Flight Engineer</span>
+                    <span class="text-crew-tabpanel-title-b">Anousheh Ansari</span>
+                  </div>
+                  
+                  <p class="crew-tabpanel-caption text-crew-tabpanel-caption">
+                    Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.
+                  </p> 
+                </div>
+              </div>
+
+              <ul class="crew-tab-list" role="tablist" tabindex="0">
+                <li class="crew-tab-item" role="presentation">
+                  <button class="btn-crew-tab" id="tab-0" aria-controls="item-0" role="tab" aria-selected="true" data-tab-item="0" tabindex="-1">
+                    <span class="text-crew-tab sr-only">Douglas Hurley</span>
+                  </button>
+                </li>
+                <li class="crew-tab-item" role="presentation">
+                  <button class="btn-crew-tab" id="tab-1" aria-controls="item-1" role="tab" data-tab-item="1" tabindex="-1">
+                    <span class="text-crew-tab sr-only">Mark Shuttleworth</span>
+                  </button>
+                </li>
+                <li class="crew-tab-item" role="presentation">
+                  <button class="btn-crew-tab" id="tab-2" aria-controls="item-2" role="tab" data-tab-item="2" tabindex="-1">
+                    <span class="text-crew-tab sr-only">Victor Glover</span>
+                  </button>
+                </li>
+                <li class="crew-tab-item" role="presentation">
+                  <button class="btn-crew-tab" id="tab-3" aria-controls="item-3" role="tab" data-tab-item="3" tabindex="-1">
+                    <span class="text-crew-tab sr-only">Anousheh Ansari</span>
+                  </button>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="crew-image-list" data-img-list>
+              <div class="crew-image-item" data-img-item="0">
+                <img class="image-crew" src="./src/assets/crew/image-douglas-hurley.webp" alt="Douglas Hurley">
+              </div>
+              <div class="crew-image-item" aria-hidden="true" data-img-item="1">
+                <img class="image-crew" src="./src/assets/crew/image-mark-shuttleworth.webp" alt="Mark Shuttleworth">
+              </div>
+              <div class="crew-image-item" aria-hidden="true" data-img-item="2">
+                <img class="image-crew" src="./src/assets/crew/image-victor-glover.webp" alt="Victor Glover">
+              </div>
+              <div class="crew-image-item" aria-hidden="true" data-img-item="3">
+                <img class="image-crew" src="./src/assets/crew/image-anousheh-ansari.webp" alt="Anousheh Ansari">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+

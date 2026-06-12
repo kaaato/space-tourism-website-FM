@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicon-32x32.png">
+    <title>Frontend Mentor | Space tourism website</title>
+    <link href="./src/style.css" rel="stylesheet">
+    <script src="./src/main.js" type="module"></script>
+  </head>
+
+  <body class="bg-technology text-white">
+    <div class="wrapper">
+      <header>
+        <nav class="header-nav">
+          <div class="header-logo">
+            <a class="link-header-logo" href="#" aria-label="Space tourism homepage">
+              <svg role="img" aria-labelledby="svg-header-logo" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                <title id="svg-header-logo">Space tourism</title>
+                <g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
+            </a>
+          </div>
+          <div class="header-menu">
+            <button class="btn-open-header-menu" type="button" aria-controls="menu" aria-expanded="false" aria-label="Open menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21" aria-hidden="true"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+            </button>
+            <!-- data-mobile-menu-state=true => mobile menu open -->
+            <div class="mobile-menu" data-mobile-menu-state="false" id="menu">
+              <div class="mobile-header">
+                <button class="btn-close-mobile-menu" type="button" aria-label="Close menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" aria-hidden="true"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+                </button>
+              </div>
+              <ul class="header-menu-list">
+                <!-- hover state on the link based on the data-current-page="true" attribute -->
+                <li class="header-menu-item">
+                  <a class="link-header-menu" href="./index.html">
+                    <span class="text-header-menu-index">00</span>
+                    <span class="text-header-menu">Home</span>
+                  </a>
+                </li>
+                <li class="header-menu-item">
+                  <a class="link-header-menu" href="./destination.html">
+                    <span class="text-header-menu-index">01</span>
+                    <span class="text-header-menu">Destination</span>
+                  </a>
+                </li>
+                <li class="header-menu-item">
+                  <a class="link-header-menu" href="./crew.html">
+                    <span class="text-header-menu-index">02</span>
+                    <span class="text-header-menu">Crew</span>
+                  </a>
+                </li>
+                <li class="header-menu-item" data-current-page="true">
+                  <a class="link-header-menu" href="#">
+                    <span class="text-header-menu-index">03</span>
+                    <span class="text-header-menu">Technology</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <main>
+        <div class="technology">
+          <h1 class="technology-title">
+            <span class="text-title-index">03</span>
+            <span class="text-title">Space launch 101</span>
+          </h1>
+          
+          <div class="technology-main">
+            <div class="technology-image-list" data-img-list>
+              <picture class="technology-image-item" data-img-item="0">
+                <source class="" srcset="./src/assets/technology/image-launch-vehicle-portrait.jpg" media="(min-width: 90rem)" width="515" height="527">
+                <source class="" srcset="./src/assets/technology/image-launch-vehicle-landscape.jpg" width="768" height="310">
+                <img class="image-technology" src="./src/assets/technology/image-launch-vehicle-landscape.jpg" width="768" height="310">
+              </picture>
+              <picture class="technology-image-item" aria-hidden="true" data-img-item="1">
+                <source class="" srcset="./src/assets/technology/image-spaceport-portrait.jpg" media="(min-width: 90rem)" width="515" height="527">
+                <source class="" srcset="./src/assets/technology/image-spaceport-landscape.jpg" width="768" height="310">
+                <img class="image-technology" src="./src/assets/technology/image-spaceport-landscape.jpg" alt="Spaceport" width="768" height="310">
+              </picture>
+              <picture class="technology-image-item" aria-hidden="true" data-img-item="2">
+                <source class="" srcset="./src/assets/technology/image-space-capsule-portrait.jpg" media="(min-width: 90rem)" width="515" height="527">
+                <source class="" srcset="./src/assets/technology/image-space-capsule-landscape.jpg" width="768" height="310">
+                <img class="image-technology" src="./src/assets/technology/image-space-capsule-landscape.jpg" alt="Space capsule" width="768" height="310">
+              </picture>
+            </div>
+            
+            <div class="technology-description">
+              <ul class="technology-tab-list" role="tablist" tabindex="0">
+                <li class="technology-tab-item" role="presentation">
+                  <button class="btn-technology-tab" id="tab-0" aria-controls="item-0" role="tab" aria-selected="true" data-tab-item="0" tabindex="-1">
+                    <span class="text-technology-tab">1</span>
+                    <span class="sr-only">Launch vehicle</span>
+                  </button>
+                </li>
+                <li class="technology-tab-item" role="presentation">
+                  <button class="btn-technology-tab" id="tab-1" aria-controls="item-1" role="tab" data-tab-item="1" tabindex="-1">
+                    <span class="text-technology-tab">2</span>
+                    <span class="sr-only">Spaceport</span>
+                  </button>
+                </li>
+                <li class="technology-tab-item" role="presentation">
+                  <button class="btn-technology-tab" id="tab-2" aria-controls="item-2" role="tab" data-tab-item="2" tabindex="-1">
+                    <span class="text-technology-tab">3</span>
+                    <span class="sr-only">Space capsule</span>
+                  </button>
+                </li>
+              </ul>
+
+              <div class="technology-tabpanel-list" data-tabpanel-list>
+                <div class="technology-tabpanel-item" role="tabpanel" aria-labelledby="tab-0" id="item-0" data-tabpanel-item="0">
+                  <div class="technology-tabpanel-title">
+                    <span class="text-technology-tabpanel-title-a">The terminology...</span>
+                    <span class="text-technology-tabpanel-title-b">Launch vehicle</span>
+                  </div>
+                  
+                  <p class="technology-tabpanel-caption text-technology-tabpanel-caption">
+                    A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+                  </p>
+                </div>
+
+                <div class="technology-tabpanel-item" role="tabpanel" aria-labelledby="tab-1" id="item-1" aria-hidden="true" data-tabpanel-item="1">
+                  <div class="technology-tabpanel-title">
+                    <span class="text-technology-tabpanel-title-a">The terminology...</span>
+                    <span class="text-technology-tabpanel-title-b">Spaceport</span>
+                  </div>
+                  
+                  <p class="technology-tabpanel-caption text-technology-tabpanel-caption">
+                    A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.
+                  </p> 
+                </div>
+
+                <div class="technology-tabpanel-item" role="tabpanel" aria-labelledby="tab-2" id="item-2" aria-hidden="true" data-tabpanel-item="2">
+                  <div class="technology-tabpanel-title">
+                    <span class="text-technology-tabpanel-title-a">The terminology...</span>
+                    <span class="text-technology-tabpanel-title-b">Space capsule</span>
+                  </div>
+                  
+                  <p class="technology-tabpanel-caption text-technology-tabpanel-caption">
+                    A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.
+                  </p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
